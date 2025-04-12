@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 36: expected 'simple_expression' not found.
+    show dad confused at Transform(xpos=1.0, xalign=1.5)with with moveinleft
+                                                             ^
+
+Ren'Py Version: Ren'Py 8.3.6.25022803
+Sat Apr 12 09:53:45 2025
