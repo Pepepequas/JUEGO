@@ -1,32 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 36, in script
-    show dad confused at Transform(xpos=-0,5, xalign=1.5)with moveinright
-SyntaxError: positional argument follows keyword argument (game/script.rpy, line 36)
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "game/script.rpy", line 22, in execute_default
+    default encendedor = false
+  File "game/script.rpy", line 22, in <module>
+    default encendedor = false
+NameError: name 'false' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 36, in script
-    show dad confused at Transform(xpos=-0,5, xalign=1.5)with moveinright
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\ast.py", line 1124, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\ast.py", line 1083, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\ast.py", line 1083, in <listcomp>
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1213, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1150, in py_compile
-    raise e
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1087, in py_compile
-    raise orig_e
-  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1079, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: positional argument follows keyword argument (game/script.rpy, line 36)
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1184, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/script.rpy", line 22, in execute_default
+    default encendedor = false
+  File "C:\Users\PCREATHORS\Documents\renpy\renpy-8.3.6-sdk\renpy\python.py", line 1208, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 22, in <module>
+    default encendedor = false
+NameError: name 'false' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.3.6.25022803
 Dreamware 1.0
-Sat Apr 12 09:54:55 2025
+Sat Apr 26 10:07:04 2025
